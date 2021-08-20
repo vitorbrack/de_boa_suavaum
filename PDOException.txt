@@ -1,0 +1,6 @@
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+
+catch (PDOException $ex) {
+    $msg->setMsg(var_dump($ex->errorInfo));
+}
